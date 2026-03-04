@@ -21,5 +21,8 @@ _Revisión del estado general del proyecto:_
 - Se ha añadido Odoo 19 a los repositorios de FreeBSD, lo que hace necesario refactorizar algunos scripts.
 - Se ha eliminado "wkhtmltopdf" de los repositorios de FreeBSD, lo que hace imposible su instalación desde la herramienta PKG y desde el árbol de __ports__.
 - Se ha creado un conjunto de scripts para habilitar la emulación de Linux y poder instalar "wkhtmltopdf" desde un repositorio de CentOS 7 / Rocky 9 y hacerlo compatible con la instalación en jaula de Odoo 18/19.
+	- Hay una instancia de Odoo 18 en producción con esta configuración y funciona correctamente.
+	- No se requiere jaulas de tipo Linux, pero se recomiendan jaulas "thick".
 - Se ha creado un script para buscar "bash" en el sistema e instalarlo si fuera necesario (algunas funciones personalizadas pueden ser muy útiles.)
-- 
+- Se está refactorizando el código de instalación para integrar la creación de jaulas de una forma más sencilla.
+- Se va a programar pruebas de instalación de complementos de OCA para facilitar el uso de la plataforma.
